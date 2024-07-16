@@ -1,0 +1,17 @@
+<div class="cart-totals-top">
+    <div class="cart-totals-flex">
+        <h5>Łączna liczba produktów</h5>
+        <h5>${{ totals.products }}</h5>
+    </div>
+    <div class="cart-totals-flex">
+        <h6>Łączne podatki</h6>
+        <h6>${{ totals.taxes }}</h6>
+    </div>
+    <div class="cart-totals-flex">
+        <h5>Razem</h5>
+        <h5>${{ totals.total }}</h5>
+    </div>
+</div>
+<div class="cart-totals-bottom">
+    <button class="btn btn-primary btn-checkout"{% if not products|length %} disabled="disabled"{% endif %}>Zakończenie zamówienia</button>
+</div>
